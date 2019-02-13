@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public event System.Action EventBulletShooted;
+    public static event System.Action EventBulletShooted;
     public GameObject bulletPrefab;
     public Transform shootPosition;
 
