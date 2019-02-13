@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357448389}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.561, y: 1.45, z: -0.016846584}
+  m_LocalPosition: {x: 0.666, y: 0.1, z: 0.37}
   m_LocalScale: {x: 0.12445713, y: 0.51432395, z: 0.42115924}
   m_Children: []
   m_Father: {fileID: 884105537}
@@ -650,6 +650,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muzzleFlashLight: {fileID: 357448389}
+  minOffset: 0.05
+  maxOffset: 0.1
+  maxIntensity: 6.5
+  minIntensity: 4.5
+  maxRange: 2
+  minRange: 1.2
 --- !u!1 &889636661
 GameObject:
   m_ObjectHideFlags: 0
