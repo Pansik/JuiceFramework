@@ -16,8 +16,14 @@ public class MuzzleFlashTrigger : MonoBehaviour
 
     void Start()
     {
-        originalPosition = muzzleFlashLight.transform.position;
+        UpdateOriginalPosition();
+        KnockBack.EventKnockBack += UpdateOriginalPosition;
         Shooting.EventBulletShooted += DoMuzzleFlash;    
+    }
+
+    private void UpdateOriginalPosition()
+    {
+        originalPosition = muzzleFlashLight.transform.position;
     }
 
     private void DoMuzzleFlash()
